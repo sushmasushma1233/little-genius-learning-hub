@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kids 3D Learning Universe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">🚀 Kids 3D Learning Universe</div>
+    <div class="nav-links">
+      <a href="#videos">Videos</a>
+      <a href="#add">Add Links</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <section class="hero-text">
+      <span class="pill">Parent-curated YouTube learning hub</span>
+      <h1>One magical place for kids to learn, sing, watch, and explore.</h1>
+      <p>A colorful 3D learning platform where parents can add good YouTube videos for rhymes, ABC, numbers, stories, science, good habits, drawing, and more.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#videos">Explore Videos</a>
+        <a class="btn secondary" href="#add">Add More Videos</a>
+      </div>
+    </section>
+
+    <section class="cube-scene">
+      <div class="cube">
+        <div class="face front">🎵 Rhymes</div>
+        <div class="face back">🔢 Numbers</div>
+        <div class="face right">🔤 ABC</div>
+        <div class="face left">📚 Stories</div>
+        <div class="face top">🧪 Science</div>
+        <div class="face bottom">🎨 Drawing</div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="dashboard">
+      <div class="dash-card"><h3 id="videoCount">0</h3><p>Videos</p></div>
+      <div class="dash-card"><h3>8</h3><p>Categories</p></div>
+      <div class="dash-card"><h3>4</h3><p>Languages</p></div>
+      <div class="dash-card"><h3>3</h3><p>Age Groups</p></div>
+    </section>
+
+    <section id="videos" class="video-zone">
+      <div class="section-title">
+        <h2>Learning Library</h2>
+        <p>Choose age, category, and language to find kid-friendly learning videos.</p>
+      </div>
+
+      <div class="filters">
+        <input id="searchInput" placeholder="Search videos, rhymes, numbers, stories..." />
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="Rhymes">Rhymes</option>
+          <option value="Letters">Letters</option>
+          <option value="Numbers">Numbers</option>
+          <option value="Stories">Stories</option>
+          <option value="Science">Science</option>
+          <option value="Good Habits">Good Habits</option>
+          <option value="Drawing">Drawing</option>
+          <option value="General Knowledge">General Knowledge</option>
+        </select>
+        <select id="ageFilter">
+          <option value="all">All Ages</option>
+          <option value="2-4">Ages 2-4</option>
+          <option value="5-7">Ages 5-7</option>
+          <option value="8-10">Ages 8-10</option>
+        </select>
+        <select id="languageFilter">
+          <option value="all">All Languages</option>
+          <option value="English">English</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Telugu">Telugu</option>
+          <option value="Spanish">Spanish</option>
+        </select>
+      </div>
+
+      <div id="videoGrid" class="video-grid"></div>
+    </section>
+
+    <section id="add" class="add-section">
+      <div class="section-title">
+        <h2>How to Add More YouTube Videos</h2>
+        <p>Open <b>videos.js</b>, copy one object, change title and YouTube ID, then commit changes in GitHub.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step"><span>1</span><h3>Copy YouTube Link</h3><p>Example: https://youtu.be/mbPNkDEN3Ps</p></div>
+        <div class="step"><span>2</span><h3>Take Video ID</h3><p>Video ID is the part after youtu.be/ or after watch?v=</p></div>
+        <div class="step"><span>3</span><h3>Paste in videos.js</h3><p>Add category, age, language, and description.</p></div>
+      </div>
+
+      <pre><code>{
+  title: "Kids Learning Video",
+  youtubeId: "mbPNkDEN3Ps",
+  age: "2-4",
+  category: "Rhymes",
+  audience: "Both",
+  language: "English",
+  description: "Educational video for kids."
+}</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <h3>🌈 Kids 3D Learning Universe</h3>
+    <p>Created as a GitHub Pages project by Sushma Neduganti</p>
+  </footer>
+
+  <script src="videos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
